@@ -1,18 +1,19 @@
 //
 //  ContentView.swift
-//  Realm
+//  RealmTestProject
 //
 //  Created by Junsu Jang on 2022/06/17.
 //
 
 import SwiftUI
+import RealmSwift
 
-import r
-
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+@main
+struct ContentView: SwiftUI.App {
+    var body: some Scene {
+        WindowGroup {
+            LocalOnlyContentView()
+        }
     }
 }
 
